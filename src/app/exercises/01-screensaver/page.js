@@ -1,13 +1,18 @@
 import React from 'react';
+import Link from 'next/link';
 
-import ScreenSaver from '../../../components/ScreenSaver';
-
-function ScreenSaverExercise() {
+function ScreenSaverIndexPage() {
   return (
-    <main className="screen-saver-wrapper">
-      <ScreenSaver color="red" />
+    <main>
+      <p>Choose your color:</p>
+        <ul>
+          <li><Link href='/exercises/01-screensaver/pink'>Pink</Link></li>
+          <li><Link href='/exercises/01-screensaver/red'>Red</Link></li>
+          <li><Link href='/exercises/01-screensaver/orange'>Orange</Link></li>
+          <li><Link href='/exercises/01-screensaver/green'>Green</Link></li>
+        </ul>
     </main>
   );
 }
 
-export default ScreenSaverExercise;
+export default ScreenSaverIndexPage;
